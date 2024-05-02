@@ -1,0 +1,56 @@
+@keyframes opening {
+  from {
+    bottom: -68px;
+  }
+  to {
+    bottom: 32px;
+  }
+}
+
+@keyframes closing {
+  from {
+    bottom: 32px;
+  }
+  to {
+    bottom: -68px;
+  }
+}
+
+material-snackbar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+
+  animation-name: opening;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 48px;
+  max-height: 68px;
+  padding: 0 16px;
+  border-radius: 4px;
+  background-color: #322F35;
+}
+
+material-snackbar.closing {
+  animation-name: closing;
+}
+
+material-snackbar > .text {
+  color: #F5EFF7;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-right: auto;
+}
+
+material-snackbar > .material-symbols-rounded {
+  color: #F5EFF7;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 12px;
+}

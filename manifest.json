@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "PoE Website Item Copy",
+  "version": "1.0",
+  "permissions": [
+    "clipboardWrite"
+  ],
+  "content_scripts": [{
+    "matches": ["https://www.pathofexile.com/my-account"],
+    "js": [
+      "node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js",
+      "src/main.js",
+      "src/snackbar.js"
+    ],
+    "css": [
+      "css/main.css",
+      "css/snackbar.css"
+    ]
+  }],
+  "icons": {
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  }
+}
