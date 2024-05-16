@@ -2,9 +2,13 @@
   "manifest_version": 3,
   "name": "PoE Website Item Copy",
   "version": "1.0",
+  "description": "Allows to copy items from your stash/inventory on the official Path of Exile website so you can paste them in PoB or other tools.",
   "permissions": [
     "clipboardWrite"
   ],
+  "action": {
+    "default_popup": "html/popup.html"
+  },
   "content_scripts": [{
     "matches": ["https://www.pathofexile.com/my-account"],
     "js": [
