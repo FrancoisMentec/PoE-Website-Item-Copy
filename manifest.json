@@ -10,7 +10,7 @@
     "default_popup": "html/popup.html"
   },
   "content_scripts": [{
-    "matches": ["https://www.pathofexile.com/my-account"],
+    "matches": ["https://www.pathofexile.com/*"],
     "js": [
       "node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js",
       "src/main.js",
