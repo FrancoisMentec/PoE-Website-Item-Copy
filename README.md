@@ -3,6 +3,9 @@ A browser extension to copy items from the PoE official website to the clipboard
 
 ![A screenshot of the extension in which an item is copied to the clipboard from Path of Exile website](img/screenshot01.png)
 
+## Installation
+- [Chrome Web Store](https://chromewebstore.google.com/detail/poe-website-item-copy/fofmicddjhcffgjopikifjmhhhckpaia)
+
 ## Usage
 <ul>
   <li>Go to <a href="https://www.pathofexile.com/" target="_blank">Path of Exile website</a>.</li>
